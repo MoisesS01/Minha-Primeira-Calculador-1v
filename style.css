@@ -1,0 +1,82 @@
+/* Define as propriedades padrão para todos os elementos, garantindo que a margem,
+   o preenchimento e o modelo de caixa sejam configurados corretamente. */
+   * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo do corpo do documento HTML */
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f7f7f7; /* Cor de fundo do corpo */
+}
+
+/* Estilo da calculadora */
+.Calculator {
+    width: 300px;
+    background-color: #464646; /* Cor de fundo da calculadora */
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px #00000040; /* Sombra */
+    font-family: "Helvetica Neue", sans-serif;
+    overflow: hidden; /* Impede que o conteúdo ultrapasse os limites da calculadora */
+}
+
+/* Estilo do visor de resultado */
+.result {
+    height: 75px;
+    padding: 20px;
+    text-align: right;
+    color: #fff; /* Cor do texto */
+    font-size: 2.5rem;
+}
+
+/* Estilo dos botões da calculadora */
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1px;
+}
+
+/* Estilo dos botões individuais */
+.buttons button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    color: #fff; /* Cor do texto */
+    font-size: 1.5rem;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+/* Estilo dos botões de cor de fundo leve (cinza claro) */
+.bg-light-gray {
+    background-color: #747474;
+}
+
+/* Estilo dos botões quando clicados */
+button:active {
+    opacity: 0.9;
+}
+
+/* Estilo dos botões de cor de fundo laranja */
+.bg-orange {
+    background-color: #6655c6;
+}
+
+/* Estilo dos botões de cor de fundo cinza */
+.bg-gray {
+    background-color: #585858;
+}
+
+/* Estilo do botão zero, ocupando duas colunas */
+.button-zero {
+    grid-column: span 2;
+}
