@@ -149,7 +149,7 @@ buttons.forEach((button) => {
             ).toString();
             updateResult();
         } else if (buttonText === "%") {
-            // Se o texto do botão for "%", calcula a porcentagem
+            // Se o texto do botão for "%", calcula a porcentagem.
             setPercentage();
         }
     });
